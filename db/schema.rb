@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110802034806) do
+ActiveRecord::Schema.define(:version => 20110813213845) do
+
+  create_table "user_logs", :force => true do |t|
+    t.datetime "log_in"
+    t.datetime "log_out"
+    t.text     "report_access_list"
+    t.text     "template_access_list"
+    t.text     "report_update_list"
+    t.text     "template_update_list"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "user_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "user_name"
