@@ -1,0 +1,45 @@
+<%= form_for(@user_log) do |f| %>
+  <% if @user_log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_log.errors.count, "error") %> prohibited this user_log from being saved:</h2>
+
+      <ul>
+      <% @user_log.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :log_in %><br />
+    <%= f.datetime_select :log_in %>
+  </div>
+  <div class="field">
+    <%= f.label :log_out %><br />
+    <%= f.datetime_select :log_out %>
+  </div>
+  <div class="field">
+    <%= f.label :report_access_list %><br />
+    <%= f.text_area :report_access_list %>
+  </div>
+  <div class="field">
+    <%= f.label :template_access_list %><br />
+    <%= f.text_area :template_access_list %>
+  </div>
+  <div class="field">
+    <%= f.label :report_update_list %><br />
+    <%= f.text_area :report_update_list %>
+  </div>
+  <div class="field">
+    <%= f.label :template_access_list %><br />
+    <%= f.text_area :template_access_list %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

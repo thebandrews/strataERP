@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: MyString
+  log_in: 2011-08-13 14:45:30
+  log_out: 2011-08-13 14:45:30
+  report_access_list: MyText
+  template_access_list: MyText
+  report_update_list: MyText
+  template_access_list: MyText
+
+two:
+  user_id: MyString
+  log_in: 2011-08-13 14:45:30
+  log_out: 2011-08-13 14:45:30
+  report_access_list: MyText
+  template_access_list: MyText
+  report_update_list: MyText
+  template_access_list: MyText

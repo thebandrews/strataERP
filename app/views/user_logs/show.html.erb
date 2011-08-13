@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @user_log.user_id %>
+</p>
+
+<p>
+  <b>Log in:</b>
+  <%= @user_log.log_in %>
+</p>
+
+<p>
+  <b>Log out:</b>
+  <%= @user_log.log_out %>
+</p>
+
+<p>
+  <b>Report access list:</b>
+  <%= @user_log.report_access_list %>
+</p>
+
+<p>
+  <b>Template access list:</b>
+  <%= @user_log.template_access_list %>
+</p>
+
+<p>
+  <b>Report update list:</b>
+  <%= @user_log.report_update_list %>
+</p>
+
+<p>
+  <b>Template access list:</b>
+  <%= @user_log.template_access_list %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_log_path(@user_log) %> |
+<%= link_to 'Back', user_logs_path %>
