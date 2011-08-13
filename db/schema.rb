@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110813213845) do
+ActiveRecord::Schema.define(:version => 20110813221414) do
+
+  create_table "roles", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "role_type"
+    t.string   "user_id"
+  end
 
   create_table "user_logs", :force => true do |t|
     t.datetime "log_in"
