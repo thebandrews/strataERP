@@ -1,13 +1,12 @@
 StrataERP::Application.routes.draw do
-<<<<<<< HEAD
+
   resources :roles
-=======
+
   resources :forecasts
 
   resources :cost_centers
 
   resources :accounts
->>>>>>> db_creation
 
   resources :user_logs
 
