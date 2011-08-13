@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account:</b>
+  <%= @forecast.account_id %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @forecast.value %>
+</p>
+
+<p>
+  <b>Cc:</b>
+  <%= @forecast.cc_id %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%= @forecast.period %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @forecast.version %>
+</p>
+
+
+<%= link_to 'Edit', edit_forecast_path(@forecast) %> |
+<%= link_to 'Back', forecasts_path %>

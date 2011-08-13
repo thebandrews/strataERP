@@ -1,4 +1,10 @@
 StrataERP::Application.routes.draw do
+  resources :forecasts
+
+  resources :cost_centers
+
+  resources :accounts
+
   resources :user_logs
 
   resources :users
