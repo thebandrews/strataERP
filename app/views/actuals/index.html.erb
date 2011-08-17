@@ -1,0 +1,29 @@
+<h1>Listing actuals</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Account</th>
+    <th>Ammount</th>
+    <th>Cc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @actuals.each do |actual| %>
+  <tr>
+    <td><%= actual.date %></td>
+    <td><%= actual.account_id %></td>
+    <td><%= actual.ammount %></td>
+    <td><%= actual.cc_id %></td>
+    <td><%= link_to 'Show', actual %></td>
+    <td><%= link_to 'Edit', edit_actual_path(actual) %></td>
+    <td><%= link_to 'Destroy', actual, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Actual', new_actual_path %>

@@ -1,5 +1,7 @@
 StrataERP::Application.routes.draw do
 
+  resources :actuals
+
   resources :roles
 
   resources :forecasts

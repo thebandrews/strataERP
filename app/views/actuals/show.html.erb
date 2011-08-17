@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @actual.date %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @actual.account_id %>
+</p>
+
+<p>
+  <b>Ammount:</b>
+  <%= @actual.ammount %>
+</p>
+
+<p>
+  <b>Cc:</b>
+  <%= @actual.cc_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_actual_path(@actual) %> |
+<%= link_to 'Back', actuals_path %>
